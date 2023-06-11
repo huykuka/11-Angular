@@ -1,4 +1,24 @@
-<div>
-  <label for="name">Hero name: </label>
-  <input id="name" [(ngModel)]="hero.name" placeholder="name">
-</div>
+<h2>My Heroes</h2>
+<ul class="mb-8 list-none p-0 w-40">
+  <li class="flex flex-grow" *ngFor="let hero of heroes">
+    <button
+      [class]="
+        'flex relative flex-grow cursor-pointer ' +
+        (hero === selectedHero
+          ? 'bg-black hover:bg-black text-white'
+          : 'bg-gray-200 hover:bg-gray-300') +
+        ' m-2 p-0 rounded h-7 items-stretch hover:text-gray-700 hover:left-1'
+      "
+      type="button"
+      (click)="onSelect(hero)"
+    >
+      <span
+        class="inline-block text-xs text-white p-2 bg-index leading-none mr-2 rounded-l"
+        >{{ hero.id }}</span
+      >
+      <span class="self-center">{{ hero.name }}</span>
+    </button>
+  </li>
+</ul>
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
