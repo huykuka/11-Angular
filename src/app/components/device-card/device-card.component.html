@@ -1,0 +1,8 @@
+<div *ngIf="devices">
+  <div class="flex flex-col" *ngFor="let device of devices">
+    <span>{{ device.name }}</span>
+    <span>{{ device.artikalNum }}</span>
+    <span>{{ device.status }}</span>
+    <span>{{ device.details }}</span>
+  </div>
+</div>

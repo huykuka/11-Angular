@@ -2,3 +2,9 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* styles.css */
+
+body {
+  padding: 20px; /* Add your desired padding value here */
+}

@@ -1,2 +1,20 @@
-<app-heroes></app-heroes>
+<h1 class="text-sky-700 font-extrabold text-5xl mb-5">Tour of Heroes</h1>
+<nav class="space-x-4 mb-5">
+  <a
+    class="bg-gray-300 text-xl p-3 px-5 rounded-e-md text-zinc-700 hover:bg-gray-700 hover:text-white"
+    routerLink="/heroes"
+    >Heroes</a
+  >
+  <a
+    class="bg-gray-300 text-xl p-3 px-5 rounded-e-md text-zinc-700 hover:bg-gray-700 hover:text-white"
+    routerLink="/dashboard"
+    >Dashboard</a
+  >
+  <a
+    class="bg-gray-300 text-xl p-3 px-5 rounded-e-md text-zinc-700 hover:bg-gray-700 hover:text-white"
+    routerLink="/devices"
+    >Devices</a
+  >
+</nav>
+<router-outlet></router-outlet>
 <app-message></app-message>
